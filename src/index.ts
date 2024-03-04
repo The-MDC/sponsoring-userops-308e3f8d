@@ -1,5 +1,5 @@
 /// Import the required functions and modules
-import { smartAccountClient } from "./createSigner";
+import { smartAccountClient } from "./createSmartAccountClient";
 import { parseEther } from "viem";
 import type { SendUserOperationResult } from "@alchemy/aa-core";
 
@@ -11,8 +11,6 @@ const ADDR = "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"; // replace with the a
  * @note Seperating the logic to create the account, and the logic to send the transaction
  */
 export async function main() {
-  // const signer = await createSigner();
-
   const amountToSend: bigint = parseEther("0.0001");
 
   const result: SendUserOperationResult =
