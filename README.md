@@ -52,11 +52,10 @@ The command executes a sponsored user operation to send ETH from your SCA to the
 
 Let's briefly review the files within the [src](https://github.com/alchemyplatform/sponsoring-userops/tree/main/src) folder.
 
-#### `createSigner.ts`
+#### `createSmartAccountClient.ts`
 
 - Creates a signer for your smart contract account ( existing or new account ) coupled with Alchemy's Gas Manager that can be used to send sponsored user operations ( i.e. their gas is paid by Alchemy's Gas Manager ).
 
 #### `index.ts`
 
 - Sends a sponsored user operation that sends ETH from your SCA to the specified wallet adddress in [index.ts](https://github.com/alchemyplatform/sponsoring-userops/blob/main/src/index.ts#L7).
-
